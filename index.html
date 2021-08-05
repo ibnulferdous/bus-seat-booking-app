@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Seat Booking App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="ticket-container">
+            <label for="ticket-type">Select Coach Type:</label>
+            <select id="ticket-type">
+                <option value="800">AC Normal (BDT 800)</option>
+                <option value="1200">AC Business (BDT 1200)</option>
+                <option value="400">Non AC (BDT 400)</option>
+            </select>
+        </div>
+        <div class="bus-body">
+            <div class="engine-row">
+                <div></div>
+                <div class="engine">
+                    <h3>Engine</h3>
+                </div>
+                <div>
+                    <img src="images/steering-wheel.svg" alt="Steering Wheel">
+                </div>
+            </div>
+
+            <div class="row starting-row">
+                <div class="seat a1">A1</div>
+                <div class="seat a2">A2</div>
+                <div class="corridoor"></div>
+                <div class="seat a3">A3</div>
+                <div class="seat a4 occupied">A4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat b1">B1</div>
+                <div class="seat b2 occupied">B2</div>
+                <div class="corridoor"></div>
+                <div class="seat b3">B3</div>
+                <div class="seat b4">B4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat c1 occupied">C1</div>
+                <div class="seat c2 occupied">C2</div>
+                <div class="corridoor"></div>
+                <div class="seat c3">C3</div>
+                <div class="seat c4">C4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat d1">D1</div>
+                <div class="seat d2">D2</div>
+                <div class="corridoor"></div>
+                <div class="seat d3">D3</div>
+                <div class="seat d4">D4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat e1">E1</div>
+                <div class="seat e2">E2</div>
+                <div class="corridoor"></div>
+                <div class="seat e3">E3</div>
+                <div class="seat e4">E4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat f1 occupied">F1</div>
+                <div class="seat f2 occupied">F2</div>
+                <div class="corridoor"></div>
+                <div class="seat f3 occupied">F3</div>
+                <div class="seat f4 occupied">F4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat g1">G1</div>
+                <div class="seat g2">G2</div>
+                <div class="corridoor"></div>
+                <div class="seat g3">G3</div>
+                <div class="seat g4">G4</div>
+            </div>
+
+            <div class="row">
+                <div class="seat h1">H1</div>
+                <div class="seat h2">H2</div>
+                <div class="corridoor"></div>
+                <div class="seat h3">H3</div>
+                <div class="seat h4">H4</div>
+            </div>
+            <div class="row">
+                <div class="seat i1">I1</div>
+                <div class="seat i2">I2</div>
+                <div class="seat i3">I3</div>
+                <div class="seat i4">I4</div>
+                <div class="seat i5">I5</div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <h4>You have selected <span id="total-selected-seats">0</span> seats for a price of <span id="total-amount">0</span> BDT</h4>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

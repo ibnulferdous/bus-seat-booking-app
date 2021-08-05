@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363958;
+}
+
+main {
+    width: 24%;
+}
+
+.ticket-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+
+select {
+    border: 1px solid #363958;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 7px 15px 7px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.bus-body {
+    width: 100%;
+    border: 1px solid #363958;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.engine-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.engine-row div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engine-row div:last-child {
+    align-items: flex-start;
+}
+
+.engine {
+    border: 1px solid #363958;
+    min-height: 115px;
+}
+
+img {
+    width: 40%;
+    padding-top: 15%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.starting-row {
+    margin-top: 10%;
+}
+
+.corridoor {
+    flex: 1.5;
+}
+
+.seat:not(.occupied) {
+    border: 1px solid #363636;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.seat:not(.occupied):not(.selected):hover {
+    transform: scale(1.05);
+}
+
+.occupied {
+    border: 1px solid #ADB5BD;
+    background: #F8F9FA;
+    color: #ADB5BD;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: default;
+}
+
+.selected {
+    background: #0AA2C0;
+    border: 1px solid #0AA2C0 !important;
+    color: #fff;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+h4 span {
+    color: #0DCAF0;
+}
+
+/* Media Query */
+
+/* mobile  */
+@media (max-width: 767px) {
+    main {
+        width: 92%;
+        padding: 10% 0 5%;
+    }
+}
+
+/* Tablet  */
+@media (min-width: 768px) and (max-width: 1025px) {
+    main {
+        width: 55%;
+        padding: 5% 0;
+    }
+}
